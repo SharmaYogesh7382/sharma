@@ -1,0 +1,11 @@
+try:
+    sample_txt=open('sample.txt','r')
+    txt=sample_txt.readlines()
+    print("Reading the file: ")
+
+    print("Line 1: ",txt[0])
+    print("Line 2: ",txt[1])
+    print("Line 3: ",txt[2])
+    sample_txt.close()
+except FileNotFoundError:
+    print('Error: The file ',"'sample.txt'",'was not found.')
