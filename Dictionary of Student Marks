@@ -1,0 +1,6 @@
+stu_marks=input("Enter the student\'s name: ")
+studentsdata={'sharma':1,'nandhini':2,'yogesh':3}
+if stu_marks in studentsdata:
+    print(stu_marks,"\'s",'marks: ',studentsdata.get(stu_marks))
+else:
+    print("Student name not found")
